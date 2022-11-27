@@ -26,7 +26,7 @@
                         document.write = w;
                 });
                 script.setAttribute('type', 'text/javascript');
-                script.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4904651292964675');
+                script.setAttribute('src', 'http://pagead2.googlesyndication.com/pagead/show_ads.js');
                 script.setAttribute('async', 'async');
                 banner.html(adsense_script).append(ads).append(script);
             }, t);
