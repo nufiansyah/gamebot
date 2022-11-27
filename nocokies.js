@@ -32,9 +32,9 @@ function iubenda_adsense_unblock() {
             t += 200;
         });
     }
-    if ('callback' in _iub.csConfiguration) {
-        _iub.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
+    if ('callback' in responsive.csConfiguration) {
+        responsive.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
     } else {
-        _iub.csConfiguration.callback = {};
-        _iub.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
+        responsive.csConfiguration.callback = {};
+        responsive.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
     }
