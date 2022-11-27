@@ -1,5 +1,4 @@
-<script>
-    function iubenda_adsense_unblock() {
+function iubenda_adsense_unblock() {
         var t = 1;
         $('.responsive_ads').each(function() {
             var banner = $(this);
@@ -39,4 +38,3 @@
         _iub.csConfiguration.callback = {};
         _iub.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
     }
-</script>
