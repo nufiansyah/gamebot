@@ -1,6 +1,6 @@
 function iubenda_adsense_unblock() {
         var t = 1;
-        $('.responsive_ads').each(function() {
+        $('._iub_responsive_ads').each(function() {
             var banner = $(this);
             setTimeout(function() {
                 var client = banner.data('client');
@@ -32,9 +32,9 @@ function iubenda_adsense_unblock() {
             t += 200;
         });
     }
-    if ('callback' in responsive_ads.csConfiguration) {
-        responsive_ads.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
+    if ('callback' in _iub.csConfiguration) {
+        _iub.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
     } else {
-        responsive_ads.csConfiguration.callback = {};
-        responsive_ads.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
+        _iub.csConfiguration.callback = {};
+        _iub.csConfiguration.callback.onConsentGiven = iubenda_adsense_unblock;
     }
