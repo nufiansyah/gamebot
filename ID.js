@@ -9,10 +9,8 @@
                 var width = banner.data('width');
                 var height = banner.data('height');
                 var adsense_script = '<scr' + 'ipt type="text/javascript">\n' +
-                    'google_ad_client = "' + client + '";\n' +
-                    'google_ad_slot = "' + slot + '";\n' +
-                    'google_ad_width = ' + width + ';\n' +
-                    'google_ad_height = ' + height + ';\n' +
+                    'data-ad-client = "' + client + '";\n' +
+                    'data-ad-slot = "' + slot + '";\n' +
                     '</scr' + 'ipt>';
                 var script = document.createElement('script');
                 var ads = document.createElement('ads');
